@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>News</title>
+	<style>
+	
+	body{margin:0;}
+		
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			width: 1000px;
+			overflow: hidden;
+			position: fixed;
+			top:0;
+			width: 100%;
+			position: -webkit-sticky;
+			/*background-color: #558dd3;*/
+			/*background-color: #1b2da1;*/
+			background-color: #ffffff;
+			font-family: 'Montserrat', sans-serif;
+
+		}
+		
+		li {
+			float: left;
+			text-align: center;
+			border-right:1px solid #ffffff;
+		}
+
+		li:last-child {
+		    border-right: none;
+		}
+
+		li a {
+			display: block;
+			/*display: inline;*/
+			/*width: 80px;*/
+			padding: 10px 20px;
+			background-color: #000000;
+			color: white;
+			text-align: center;
+			text-decoration: none;
+			font-size: 21px;
+			}
+		
+		li a:hover:not(.active) {
+			background-color: white;
+			color: black;
+		}
+			.active {
+		    background-color: #1b2da1;
+		}
+
+	h1{
+			font-family: 'Open Sans', sans-serif;
+		}
+
+		td{
+			font-family: 'Open Sans', sans-serif;
+		}
+
+	</style>
+	</head>
+	<body style="background-color:#000000;">
+		<!-- logo -->
+		<div style="background-color: #ffffff;">
+			<center><img src="./pic/logo.jpg" height="300px"></center>
+		</div>
+		
+		<ul>
+		  <li><a href="./home.html"><b>Home</b></a></li>
+		  <li><a href="./about.html"><b>About me</b></a></li>
+		  <li><a class="active" href="./news.html"><b>News</b></a></li>
+		  <li><a href="./papers.html"><b>Papers</b></a></li>
+		  <li><a href="./contact.html"><b>Contact</b></a></li>
+		</ul>
+		
+		<div style="padding:5px;margin-top:90px;margin-left:95px;margin-right:95px;background-color:#ffffff;height:500px">
+			<h1><center> News! </center></h1>
+			<center>
+				<p style="font-family:courier;margin:50px;height:330px;width:700px;text-align:justify;">
+					<b> 1 Jun 2018 </b> <br>
+					I will participate in the <a href="http://www.chem.ucla.edu/~ana/ICTAC2018.html">17<sup>th</sup> International Conference on Theoretical Aspects of Catalysis</a> (ICATC 2018, June 24-28, 2018 UCLA, Los Angeles, CA, USA) and have a talk about <i>"Modeling of CrO<sub>x</sub>/SiO<sub>2</sub> and WO<sub>x</sub>/SiO<sub>2</sub> Catalysts - Formation Of Active Sites For Ethylene Polymerization And Propene Metathesis"</i>.
+					<br><br>
+					#########################################################################
+					<br><br>
+					<b>28 May 2018 </b> <br>
+					My PhD thesis is finally finished. It can be downloaded from <a href="./dlc/phd_thesis_maciej_gierada.pdf">here</a>. Although it is written in Polish, the core of the thesis is a series of 4 consecutive papers written in English (+ 1 review in Polish), so, understanding of the main message should not be a problem.
+					<br><br>
+					#########################################################################
+					<br><br>
+				</p>
+				
+			</center>			
+		</div>
+	</body>
+</html>

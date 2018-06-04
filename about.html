@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Maciej Gierada personal webpage</title>
+	<style>
+	
+	body{margin:0;}
+		
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			width: 100px;
+			overflow: hidden;
+			position: sticky;
+			top:0;
+			width: 100%;
+			position: -webkit-sticky;
+			/*background-color: #558dd3;*/
+			/*background-color: #1b2da1;*/
+			background-color: #ffffff;
+			font-family: 'Montserrat', sans-serif;
+
+		}
+		
+		li {
+			float: left;
+			text-align: center;
+			border-right:1px solid #ffffff;
+		}
+
+		li:last-child {
+		    border-right: none;
+		}
+
+		li a {
+			display: block;
+			/*display: inline;*/
+			/*width: 80px;*/
+			padding: 10px 20px;
+			background-color: #000000;
+			color: white;
+			text-align: center;
+			text-decoration: none;
+			font-size: 21px;
+			}
+		
+		li a:hover:not(.active) {
+			background-color: white;
+			color: black;
+		}
+		
+		.active {
+		    background-color: #1b2da1;
+		}
+
+
+		h1{
+			font-family: 'Open Sans', sans-serif;
+		}
+
+		td{
+			font-family: courier;
+		}
+
+	</style>
+	</head>
+	<body style="background-color:#000000;">
+		<!-- logo -->
+		<div style="background-color: #ffffff;">
+			<center><img src="./pic/logo.jpg" height="300px"></center>
+		</div>
+
+		<ul>
+		  <li><a href="./home.html"><b>Home</b></a></li>
+		  <li><a class="active" href="./about.html"><b>About me</b></a></li>
+		  <li><a href="./news.html"><b>News</b></a></li>
+		  <li><a href="./papers.html"><b>Papers</b></a></li>
+		  <li><a href="./contact.html"><b>Contact</b></a></li>
+		</ul>
+
+		<div style="padding:5px;margin-top:90px;margin-left:95px;margin-right:95px;background-color:#ffffff;height:800px">
+			<h1><center> About me </center></h1>
+			<center>
+				<img src="./pic/mgierada.jpg" height="400px">
+				<p style="font-family:courier;margin:50px;height:330px;width:700px;text-align:justify;">
+				My research interests lie primarily in the use of quantum chemistry methods including mainly density functional theory (DFT) to study catalytic reactions. My latest research activity focuses on the modeling of homogeneous and heterogeneous catalysts as well as the surface of many inorganic materials. The goals are to unravel reacton mechanisms of many important processes and to guide and assist experimentalists in development of novel catalytic systems.
+				<br><br>
+				I have just finished my PhD thesis entitled <i>"The CrO<sub>x</sub>/SiO<sub>2</sub> catalyst - structure of the surface species and mechanism of ethylene polymerisation"</i> under the supervision of prof. J. Handzlik (Cracow University of Technology) and currently looking for a PostDoc position.
+				</p>
+			</center>
+		</div>
+	</body>
+</html>
