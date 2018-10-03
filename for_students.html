@@ -64,12 +64,35 @@
 		    background-color: #1b2da1;
 		}
 
-	h1{
+		h1{
 			font-family: 'Open Sans', sans-serif;
 		}
 
 		td{
 			font-family: 'Courier';
+		}
+
+		button {
+		  display: inline-block;
+		  padding: 15px 25px;
+		  font-size: 24px;
+		  cursor: pointer;
+		  text-align: center;
+		  text-decoration: none;
+		  outline: none;
+		  color: #fff;
+		  background-color: #000000;
+		  border: none;
+		  border-radius: 15px;
+		  box-shadow: 0 9px #474848;
+		}
+
+		.button:hover {background-color: #1b2da1}
+
+		.button:active {
+		  background-color: #1b2da1;
+		  box-shadow: 0 5px #474848;
+		  transform: translateY(4px);
 		}
 
 	</style>
@@ -147,7 +170,9 @@
 				</table>
 				<br><br><br><br><br>
 
-				<button onclick="myFunction()">Sprawdź ocenę</button>
+				<button class="button" onclick="myFunction()">Sprawdź ocenę!</button>
+
+				<!-- <button style="height:40px;font-family:arial;font-size:15px" onclick="myFunction()">Sprawdź ocenę!</button> -->
 
 				<p style="font-family:arial;text-align:center;color:red;font-weight:900" id="get_ocena"></p>
 
@@ -168,16 +193,11 @@
 				        txt = "Faktycznie działa";
 				    }
 				    else {
-				        txt = "Brak oceny dla tego numeru albumu";
+				        txt = "Brak oceny dla tego numeru albumu";				        
 				    }
 				    document.getElementById("get_ocena").innerHTML = txt ;
 				}
 				</script>
-
-</body>
-</html>
-
-
 			</center>
 		</div>
 	</body>
