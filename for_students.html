@@ -23,7 +23,7 @@
 			padding: 0;
 			width: 1000px;
 			overflow: hidden;
-			position: fixed;
+			position: sticky;
 			top:0;
 			width: 100%;
 			position: -webkit-sticky;
@@ -111,7 +111,7 @@
 	          
 		</ul>
 		
-		<div style="padding:5px;margin-top:90px;margin-left:95px;margin-right:95px;background-color:#ffffff;height:750px;">
+		<div style="padding:5px;margin-top:90px;margin-left:95px;margin-right:95px;background-color:#ffffff;height:850px;">
 			<h1><center> Szanowni Państwo! </center></h1>
 			<center>
 							
@@ -144,7 +144,40 @@
 						<td>Wtorek</td>
 						<td>10:00-12:00</td>
 					</tr>
-				</table>			
+				</table>
+				<br><br><br><br><br>
+
+				<button onclick="myFunction()">Sprawdź ocenę</button>
+
+				<p id="get_mark"></p>
+
+				<script>
+				function myFunction() {
+				    var txt;
+				    var album = prompt("Podaj nr albumu:", "");
+				    if (album == null || album == "") {
+				        txt = "Anulowano";
+				    }
+				    else if (album == 1 || album == "") {
+				        txt = "Chyba działa" ;
+				    }
+				    else if (album == 2 || album == "") {
+				        txt = "OK działa";
+				    }
+				    else if (album == 3 || album == "") {
+				        txt = "Faktycznie działa";
+				    }
+				    else {
+				        txt = "Brak oceny dla tego numeru albumu";
+				    }
+				    document.getElementById("get_mark").innerHTML = txt;
+				}
+				</script>
+
+</body>
+</html>
+
+
 			</center>
 		</div>
 	</body>
